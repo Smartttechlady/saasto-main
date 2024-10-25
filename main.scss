@@ -1,0 +1,220 @@
+@use "./reset"; //modules
+@use "./variables";
+
+body {
+  background-color: map-get(variables.$bg-colors, "orange");
+  color: map-get(variables.$font-colors, "deep-black");
+  font-size: 1rem;
+  line-height: 1;
+  height: 100%;
+  font-family: variables.$poppins-font;
+  padding-top: 40px;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .logo {
+    margin-right: 211.43px;
+  }
+
+  .navigation {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 48px;
+
+      li {
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.nav-right {
+  margin-left: 141px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  a {
+    text-decoration: none;
+    color: map-get(variables.$font-colors, "red");
+    text-transform: capitalize;
+  }
+
+  button {
+    border-radius: 34px;
+    padding: 16px 32px;
+    color: map-get(variables.$font-colors, "white");
+    background-color: map-get(variables.$font-colors, "red");
+    outline: none;
+    border: none;
+    font-weight: 600;
+  }
+}
+
+
+
+
+main {
+  margin-top: 8rem;
+
+  h1 {
+    position: relative;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.3;
+    text-align: center;
+    z-index: 2;
+
+  }
+
+ .shape{
+    position: absolute;
+    left: 30%;
+    bottom: 53.5%;
+    z-index: 1;
+   
+  }
+
+  p{
+    margin-top: 2rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+
+  }
+
+
+  button{
+    border-radius: 34px;
+    padding: 16px 32px;
+    color: map-get(variables.$font-colors, "white");
+    background-color: map-get(variables.$font-colors, "red");
+    outline: none;
+    border: none;
+    font-weight: 600;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover{
+      background-color: map-get(variables.$font-colors, "dark-red");
+      color: map-get(variables.$font-colors, "white");
+      transform: translateY(-2px);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+
+    }
+
+  }
+
+
+  .clock{
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    width: 10rem;
+
+  }
+
+
+  .zigzag{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 2.5rem;
+   
+  }
+
+  .diamond{
+    position: absolute;
+    bottom: 20%;
+    left: 40%;
+    width: 2.2rem;
+  }
+
+  .clipboard{
+    position: absolute;
+    bottom: 25%;
+    right:  30%;
+    width: 8rem;
+  }
+    
+  
+}
+
+
+
+footer {
+
+  margin-top: 8rem ;
+  
+
+
+
+  .footerbackground{
+    position: relative;
+    z-index: 1;
+   
+
+   
+  } 
+
+
+
+.mobilescreen1{
+  width: 20rem;
+  height: 30rem;
+  position: absolute;
+  top: 40%;
+
+
+}
+
+  .mobilescreen2{
+    width: 25rem;
+    height: 45rem;
+    position: absolute;
+    top: 25%;
+    right: -4.2%;
+    
+    
+
+  }
+
+  .footertext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    position: relative;
+    top: 10rem;
+    z-index: 2;
+    font-family:sans-serif;
+  
+   
+  }
+
+  h2{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+
+  p{
+    font-size: 12px;
+    font-weight: lighter;
+    color: map-get(variables.$font-colors, "deep-black");
+    letter-spacing: 1px;
+  }
+  
+}
